@@ -38,6 +38,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+/*
+  아침에 캘린더 밑 바텀 내비게이션 아이템 터치 이벤트
+ */
 
 
 class MainActivity : ComponentActivity() {
