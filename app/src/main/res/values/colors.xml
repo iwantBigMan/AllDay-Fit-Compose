@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navy">#111571</color>
+    <color name="blue">#0584F9</color>
+    <color name="orange">#F85C07</color>
+    <color name="light_orange">#FFCA7B</color>
+    <color name="sky_blue">#74BCFF</color>
+    <color name="dark_blue">#0E64FF</color>
+    <color name="light_blue">#E8F5FF</color>
+    <color name="pastel_blue">#6495ED</color>
+    <color name="yellow">#FAE100</color>
+    <color name="gray">#D9D9D9</color>
+    <color name="dark_gray">#838383</color>
+    <color name="green">#00C73C</color>
+    <color name="naver_green">#03C75A</color>
+    <color name="facebook_blue">#1877F2</color>
+    <color name="google_black">#8A000000</color>
+    <color name="light_yellow">#F7FFC3</color>
+    <color name="none">@android:color/transparent</color>
+    <color name="kakao_container">#FEE500</color>
+    <color name="kakao_simbol">#000000</color>
+    <color name="kakao_label">#D9000000</color>
+    <!-- 제거 1순위 컬러-->
+    <!-- calendar color-->
+    <color name="example_1_bg">#3A284C</color>
+    <color name="example_1_bg_secondary">#51356E</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="example_4_grey">#474747</color>
+    <color name="example_4_green">#008489</color>
+    <color name="example_1_white_light">#4DFFFFFF</color>
+    <color name="example_1_white">#D9FFFFFF</color>
+    <color name="example_1_bg_light">#433254</color>
+    <!--    <color name="navy_blue">#2400FF</color>-->
+    <!--    <color name="violet_blue">#707EFF</color>-->
+    <!--    <color name="mint">#0EF1E4</color>-->
+    <!--    <color name="light_green">#A8EB19</color>-->
+    <!--    <color name="red">#EB1919</color>-->
+    <!--    <color name="beige">#FEFFD4</color>-->
+    <!--    <color name="pink">#FFBDBD</color>-->
+    <!--    <color name="blue_gray">#9CA1C9</color>-->
+    <!--    <color name="deep_red">#FF7070</color>-->
+
+    <color name="red">#E40C0C</color>
+</resources>

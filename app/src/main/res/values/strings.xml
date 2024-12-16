@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">AllDayFit</string>
+
+    <!-- main activity -->
+    <string name="commity">커뮤니티</string>
+    <string name="main_page">메인</string>
+    <string name="exercise_sit">운동상태</string>
+    <string name="app_title">All-DayFit</string>
+
+    <!-- main fragment -->
+    <string name="exercise_record">운동기록</string>
+    <string name="week_goal">주간목표</string>
+    <string name="sunday">일</string>
+    <string name="monday">월</string>
+    <string name="tuesday">화</string>
+    <string name="wednesday">수</string>
+    <string name="thursday">목</string>
+    <string name="friday">금</string>
+    <string name="saturday">토</string>
+    <string name="exercise_start">운동하기</string>
+    <string name="exercise_finish">끝내기</string>
+    <string name="today">%s일</string>
+    <string name="fix_goal_list_btn">주간 목표 수정</string>
+
+    <!-- goal  fragment -->
+    <string name="exercise_goal_add_edit_hint">목표를 추가해주세요.</string>
+
+    <!-- exercise fragment -->
+    <string name="weight">WEIGHT</string>
+    <string name="weight_value">%dKG</string>
+    <string name="height">HEIGHT</string>
+    <string name="height_value">%dCM</string>
+    <string name="exercise_time">exercise\nTime</string>
+
+    <!-- exercise dialog fragment -->
+    <string name="gender">Gender</string>
+    <string name="gender_man">남자</string>
+    <string name="gender_woman">여자</string>
+
+    <!-- community fragment -->
+    <string name="community_tab_home">홈</string>
+    <string name="community_tab_my_post">마이 게시물</string>
+    <string name="community_fab_add_post">내 게시물 추가</string>
+
+    <!-- post dialog -->
+    <string name="post_dialog_title">게시글 작성</string>
+
+    <!-- meal fragment -->
+    <string name="diet_record">식단 기록</string>
+    <string name="diet_record_breakfast">아침</string>
+    <string name="diet_record_lunch">점심</string>
+    <string name="diet_record_dinner">저녁</string>
+    <string name="diet_record_snack">간식</string>
+    <string name="carbohydrates">탄수화물</string>
+    <string name="protein">단백질</string>
+    <string name="fat">지방</string>
+    <string name="calories">칼로리</string>
+    <string name="bmi">BMI</string>
+    <string name="daily_nutritional_analysis">하루 섭취 영양</string>
+    <string name="daily_intake">섭취량</string>
+    <string name="daily_recommended_amount">권장량</string>
+
+    <!-- meal dialog -->
+    <string name="diet_record_add_btn_desc">식단 음식 추가</string>
+    <string name="diet_record_close_btn_desc">식단 기록 추가 화면 닫기</string>
+    <string name="diet_add_finish">식단완료</string>
+    <string name="diet_record_add_edit_hint">식단을 추가해주세요.</string>
+    <string name="diet_record_dialog_title">식단기록</string>
+
+
+    <!-- month record activity -->
+    <string name="calendar_title">Example 2</string>
+    <string name="calendar_subtitle">Month header view, single selection, vertical scrolling, hides in and out dates.</string>
+    <string name="activity_title_view">Calendar View Sample</string>
+    <string name="calendar">달력</string>
+    <string name="month_record">월간 기록</string>
+
+
+    <string name="preferences">환경설정</string>
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="week_mode">Week mode</string>
+    <string name="slogan">Make your rootine</string>
+    <string name="user_condition">의 상태</string>
+    <string name="subtract_day_btn_desc">select the day before</string>
+    <string name="add_day_btn_desc">select the day next</string>
+    <string name="calorie_consumption">CALORIE\nCONSUMPTION</string>
+    <string name="exercise_status_user_state">나의 운동 상태</string>
+    <string name="setting_dark_mode">다크모드</string>
+    <string name="setting_app_noti">앱 알림 설정</string>
+    <string name="setting_guide">이용가이드</string>
+
+    <!-- community fragment -->
+    <string name="community_btn_amend">수정</string>
+    <string name="community_btn_delete">삭제</string>
+    <string name="community_tv_date">작성일 : </string>
+    <string name="community_newpost_title_hint">제목을 입력해주세요.</string>
+    <string name="community_newpost_tv_title">글 제목</string>
+    <string name="community_newpost_tv_info">내용</string>
+    <string name="community_newpost_tv_info_hint">게시글을 작성해주세요.</string>
+    <string name="community_newpost_btn_write">글쓰기</string>
+    <string name="community_newpost_btn_amend">수정</string>
+    <string name="community_newpost_btn_cancel">취소</string>
+    <string name="community_main_tab_desc">커뮤니티 탭 레이아웃</string>
+    <string name="community_newpost_close">게시글 작성 닫기</string>
+
+    <!-- setting fragment -->
+    <string name="notice">공지사항</string>
+    <string name="setting_mod_user">유저정보 수정</string>
+    <string name="setting_all_app_notifi">앱 전체 알림</string>
+    <string name="setting_exer_notifi">운동 알림</string>
+    <string name="setting_comm_notifi">커뮤니티 알림</string>
+    <string name="setting_samsung_health">Samsung health 연동 여부</string>
+    <string name="comm_notifi">커뮤니티 알림</string>
+
+    <!-- setting modified user fragment -->
+    <string name="mod_user_nickname">유저 닉네임 변경</string>
+    <string name="mod_user_profile">프로필 사진 변경</string>
+    <string name="mod_login_info">로그인 정보</string>
+    <string name="mod_exercise_locate">운동 장소 설정</string>
+    <string name="mod_exercise_time">운동 시간 설정</string>
+
+    <!-- countdown activity -->
+    <string name="count_ment_user">루트를 지정하시면\n루트에 맞춰서\n진행이 가능합니다.</string>
+    <string name="count_frist_ment">Start with\nclick</string>
+    <string name="count_finish_ment">오늘도\n맛있다</string>
+    <string name="btn_more_exercise">운동 더하기</string>
+    <string name="btn_finish_exercise">운동 끝내기</string>
+    <string name="end">종료</string>
+    <string name="start">시작</string>
+    <string name="rest">휴식</string>
+
+    <!-- login activity -->
+    <string name="emailSign">Email Sign Up</string>
+    <string name="emailSiginIn">Email Sign In</string>
+    <string name="googleSignIn">Sign In with Google</string>
+    <string name="google">Sign up with GooGle </string>
+    <string name="default_web_client_id">11976146148-omnd8puu3ithu4bspropaf2tehgeffc9.apps.googleusercontent.com</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="edit_finish">수정</string>
+    <string name="user">유저</string>
+
+    <string name="community_edit">수정</string>
+</resources>
