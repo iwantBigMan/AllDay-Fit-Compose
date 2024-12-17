@@ -17,9 +17,11 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -38,6 +40,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+
 /*
   아침에 캘린더 밑 바텀 내비게이션 아이템 터치 이벤트
  */
@@ -153,7 +156,6 @@ fun MainFragmentContent() {
 }
 
 
-
 @Composable
 fun MainBottomNavigation(navController: NavHostController) {
     // 메뉴 항목 정의
@@ -197,12 +199,13 @@ fun MainBottomNavigation(navController: NavHostController) {
                     Icon(
                         painter = painterResource(id = item.icon),
                         contentDescription = stringResource(id = item.label),
-                            // 아이콘의 크기를 24dp로 설정
+                        // 아이콘의 크기를 24dp로 설정
                         modifier = Modifier.size(20.dp)
                     )
                 },
                 label = {
-                    Text(text = stringResource(id = item.label), fontSize = 6.sp
+                    Text(
+                        text = stringResource(id = item.label), fontSize = 6.sp
                     )
                 },
                 selected = isSelected,
@@ -268,7 +271,7 @@ fun BottomNavigationItem(
         verticalArrangement = Arrangement.Center,
 
         modifier = modifier
-            .fillMaxWidth(1f/5f)  // 5개의 아이템이므로 각각 1/5 너비
+            .fillMaxWidth(1f / 5f)  // 5개의 아이템이므로 각각 1/5 너비
             .clickable { onClick() }
             //아이템 간격 일정하게
             .padding(horizontal = 8.dp)
@@ -284,3 +287,8 @@ fun BottomNavigationItem(
         }
     }
 }
+
+
+
+
+

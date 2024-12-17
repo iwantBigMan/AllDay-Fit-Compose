@@ -32,11 +32,7 @@ class MainFragment : Fragment() {
     ): View {
         return ComposeView(requireContext()).apply {
             setContent {
-                var showDialog by remember { mutableStateOf(false) }
-                // Show dialog
-                if (showDialog) {
-                    DialogContent { showDialog = false }
-                }
+
 
 
                 ExerciseRecordScreen(
@@ -56,7 +52,7 @@ class MainFragment : Fragment() {
                         WeekGoal("하루 2L 물 마시기")
                     ),
                     onStartExercise = {},
-                    onEditGoals = { showDialog = true }
+                    onEditGoals = { WeeklyGoalInputDialog() }
                 )
             }
         }
@@ -64,11 +60,11 @@ class MainFragment : Fragment() {
 }
 
 @Composable
-fun DialogContent(onClose: () -> Unit) {
+fun DialogContent(onClick : () -> Unit) {
     WeeklyGoalInputDialog(
-        onClose = onClose,
+        onClose = onClick,
         onAddGoal = {},
-        onFinish = onClose,
+        onFinish = {},
         goalList = listOf("운동 30분", "스트레칭 10분")
     )
 }
@@ -80,7 +76,7 @@ fun ExerciseRecordScreen(
     weeklyRecords: List<WeeklyRecord> = emptyList(),
     weekGoals: List<WeekGoal> = emptyList(),
     onStartExercise: () -> Unit = {},
-    onEditGoals: () -> Unit = {}
+    onEditGoals: () -> Unit = {WeeklyGoalInputDialog()}
 ) {
     Scaffold(
         topBar = {
@@ -169,7 +165,7 @@ fun ExerciseRecordScreen(
                         .fillMaxWidth()
                         .padding(vertical = 15.dp)
                         .padding(start = 20.dp),
-                    verticalAlignment = Alignment.CenterVertically
+                    verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Text(
                         text = stringResource(R.string.week_goal),

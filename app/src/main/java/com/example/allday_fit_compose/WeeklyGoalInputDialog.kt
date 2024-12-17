@@ -57,8 +57,9 @@ fun WeeklyGoalInputDialog(
     ConstraintLayout(
         modifier = Modifier
             .wrapContentSize()
-            .background(colorResource(id = R.color.none))
-            .padding(10.dp)
+            .background(colorResource(id = R.color.white))
+            .padding(10.dp),
+
     ) {
         val (closeBtn, dialogTitle, goalListView, goalEdit, addGoalBtn, finishBtn) = createRefs()
 
@@ -68,6 +69,7 @@ fun WeeklyGoalInputDialog(
                 .constrainAs(closeBtn) {
                     end.linkTo(parent.end)
                     top.linkTo(parent.top)
+
                 }
                 .size(48.dp)
                 .background(colorResource(id = R.color.none))
@@ -110,17 +112,18 @@ fun WeeklyGoalInputDialog(
         OutlinedTextField(
             value = goalText,
             onValueChange = { goalText = it },
-            placeholder = { Text(text = stringResource(id = R.string.exercise_goal_add_edit_hint)) },
+                    placeholder = { Text(text = stringResource(id = R.string.exercise_goal_add_edit_hint)) },
             modifier = Modifier
                 .constrainAs(goalEdit) {
                     start.linkTo(parent.start)
-                    end.linkTo(addGoalBtn.start)
                     top.linkTo(goalListView.bottom)
                     bottom.linkTo(finishBtn.top)
+
                 }
                 .fillMaxWidth()
-                .padding(bottom = 30.dp)
-                .height(50.dp),
+                .padding(bottom = 10.dp)
+                .padding(end = 40.dp)
+                .height(60.dp),
             textStyle = LocalTextStyle.current.copy(fontSize = 12.sp),
             singleLine = true
         )
@@ -131,7 +134,6 @@ fun WeeklyGoalInputDialog(
                 .constrainAs(addGoalBtn) {
                     end.linkTo(goalEdit.end)
                     top.linkTo(goalEdit.top)
-                    bottom.linkTo(goalEdit.bottom)
                 }
                 .size(48.dp)
                 .background(colorResource(id = R.color.none))
@@ -151,9 +153,11 @@ fun WeeklyGoalInputDialog(
                     end.linkTo(parent.end)
                     bottom.linkTo(parent.bottom)
                     top.linkTo(goalEdit.bottom)
+
                 }
                 .fillMaxWidth()
                 .height(50.dp)
+                .padding(start = 20.dp)
         ) {
             Text(text = stringResource(id = R.string.edit_finish))
         }
