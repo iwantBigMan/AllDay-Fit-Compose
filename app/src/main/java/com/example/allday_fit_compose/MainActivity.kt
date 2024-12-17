@@ -107,7 +107,8 @@ fun Toolbar() {
 fun MainNavHost(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = "mainFragment" // 시작 화면
+        startDestination = "MainFragment"// 시작 화면
+
     ) {
         composable("communityMainFragment") {
             Text("Community Screen") // 실제 UI 컴포저블로 교체
@@ -115,8 +116,9 @@ fun MainNavHost(navController: NavHostController) {
         composable("dietRecordFragment") {
             Text("Diet Record Screen")
         }
-        composable("mainFragment") {
-            Text("Main Screen")
+        composable("MainFragment") {
+            // 메인화면 컴포저블로 교체
+            MainFragmentContent()
         }
         composable("exerciseStatusFragment") {
             Text("Exercise Status Screen")
@@ -126,6 +128,30 @@ fun MainNavHost(navController: NavHostController) {
         }
     }
 }
+
+@Composable
+fun MainFragmentContent() {
+    ExerciseRecordScreen(
+        currentDate = "2023.12",
+        weeklyRecords = listOf(
+            WeeklyRecord("Sun", completed = true),
+            WeeklyRecord("Mon"),
+            WeeklyRecord("Tue", completed = true),
+            WeeklyRecord("Wed"),
+            WeeklyRecord("Thu"),
+            WeeklyRecord("Fri", completed = true),
+            WeeklyRecord("Sat")
+        ),
+        weekGoals = listOf(
+            WeekGoal("운동 3회 이상"),
+            WeekGoal("하루 1만 보폭"),
+            WeekGoal("하루 2L 물 마시기")
+        ),
+        onStartExercise = {},
+        onEditGoals = {}
+    )
+}
+
 
 
 @Composable
@@ -143,7 +169,7 @@ fun MainBottomNavigation(navController: NavHostController) {
             label = R.string.diet_record
         ),
         BottomNavItem(
-            route = "mainFragment",
+            route = "MainFragment",
             icon = R.drawable.ic_main,
             label = R.string.main_page
         ),

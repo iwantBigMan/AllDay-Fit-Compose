@@ -154,4 +154,6 @@
     <string name="user">유저</string>
 
     <string name="community_edit">수정</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_weekly_goal_input_dialog">WeeklyGoalInputDialog</string>
 </resources>
